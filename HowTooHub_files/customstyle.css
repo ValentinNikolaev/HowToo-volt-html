@@ -801,26 +801,71 @@ td.groupAdmins span {width:220px;}
 /*.row.togglelogoset {width:calc(100% - 200px);}
 .row.togglelogoset.flip {width:calc(100% - 52px); float:right;}*/
 
+.body-container {
+  background: #051315!important;
+}
+#mainContainer {
+  background: #051315!important;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.wrapper-container {
+  display: flex;
+}
+
+.info-text {
+  width: 600px;
+  padding: 40px 60px;
+  color: #fff;
+}
+
+h1.info-text-title {
+  color: #fff!important;
+  font-family: 'Oswald', sans-serif!important;
+  font-size: 42px!important;
+  line-height: 40px!important;
+}
+
+.info-text-subtitle {
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 30px;
+}
+
+.btn-start {
+  margin-top: 40px;
+  padding-left: 0;
+}
+
+.main-pic {
+  display: block;
+  margin: 40px auto 0;
+}
+
+.volt-img {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+
 .picture, .bottom-pic  {
   background: #051315;
 }
 
-.bottom-pic img {
-  margin-top: 85px;
+.navbar-navigation li:not(:last-child) {
+  margin-right: 15px!important;
 }
 
-.volt-img {
-  width: 30%; 
-  display: block; 
-  margin: 80px auto;
-}
+@media screen and (min-width: 2000px) and (height: 1440px) {
+  .main-pic {
+    margin: 200px auto 0!important;
+  }
 
-#mainContainer, .row.h-100 {
-  background: #051315!important;
-}
-
-a.visible-phone img {
-  width: 100px;
+  .bottom-pic {
+    margin-top: 150px;
+  }
 }
 
 
@@ -842,6 +887,29 @@ a.visible-phone img {
 .body-container.logincheck .row.h-100 .col-sm-12.col-12 {max-width:30%; padding:0 15px !important; position:relative; z-index:999;}
 .body-container.logincheck .row.h-100 .col.pr-0.pl-0 {position:absolute; top:0; right:0;}
 .body-container.logincheck .row.h-100 .col img.img-fluid {width:82%;}
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .wrapper-container {
+    display: flex;
+    flex-direction: column!important;
+    align-items: center;
+  }
+
+  .info-text {
+    width: 90%!important;
+    text-align: center;
+  }
+
+  h1.info-text-title {
+    font-size: 56px!important;
+    margin-top: 50px!important;
+  }
+
+  .info-text-subtitle {
+    font-size: 26px;
+    line-height: 2rem;
+  }
 }
 
 @media only screen and (min-device-width:1024px) and (max-device-width:1366px) and (-webkit-min-device-pixel-ratio:2)  and (orientation:portrait)  {}
@@ -879,6 +947,9 @@ section.col-lg-3 {float:left;}
 .body-container.logincheck.home main.main .row.h-100 .col-4 .row {margin-top:0 !important; margin-bottom:0 !important; padding-right:10px !important;}
 /*.body-container.logincheck.home main.main .row.h-100 .col-sm-12.col-md-5.col-lg-5.col-12 .display-1 {font-size:1.7rem !important; line-height:2rem !important;}
 .body-container.logincheck.home main.main .row.h-100 .col-sm-12.col-md-5.col-lg-5.col-12 .row {margin-top:0 !important; margin-bottom:0 !important; padding-right:10px !important;}*/
+.wrapper-container {
+  margin-bottom: 50px;
+}
 }
 
 /*@media screen and (min-width:1023px) and (max-width:1250px) {
@@ -887,8 +958,13 @@ section.col-lg-3 {float:left;}
 }*/
 
 @media screen and (max-width: 1024px) and (max-height: 1366px) {
+  .info-text {
+    width: 400px;
+  }
+
   .volt-img {
-    margin-top: 470px;
+    margin-top: 70px;
+    max-width: 300px;
   }
 }
 
@@ -902,6 +978,9 @@ footer.site-footer.container-fluid .col-lg-6 {flex:0 0 50%; max-width:50%;}
 .body-container.logincheck.home main.main .row.h-100 .col-sm-12.col-md-5.col-lg-5.col-12 .display-1 {font-size:1.7rem !important; line-height:2rem !important;}
 .body-container.logincheck.home main.main .row.h-100 .col-sm-12.col-md-5.col-lg-5.col-12 .row {margin-top:0 !important; margin-bottom:0 !important; padding-right:10px !important;}
 .body-container.logincheck.home main.main .row.h-100 .col.pr-0.pl-0 {max-width:60%;}*/
+.wrapper-container {
+  margin-bottom: 40px;
+}
 
 }
 
@@ -909,6 +988,25 @@ footer.site-footer.container-fluid .col-lg-6 {flex:0 0 50%; max-width:50%;}
   #navMenu {
     margin-right: 30px;
     position: fixed;
+  }
+
+  .wrapper-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-pic {
+    margin: 0 auto;
+  }
+
+  .volt-img {
+    margin: 0;
+    max-width: 250px;
   }
 }
 
@@ -961,8 +1059,8 @@ footer.site-footer.container-fluid .col-lg-6 {flex:0 0 100%; max-width:100%;}
 #dashboard .Activities-title {margin-bottom:14px;}
 .active-tab-content.page-my-learning span.mylearningcontainer {margin-bottom:-6px;}
 .nav-tabs-wrapper .nav li {display: block; background: #fff;}
-.volt-img {
-  margin-top: 470px;
+.wrapper-container {
+  margin-bottom: 50px!important;
 }
 }
 
@@ -1103,6 +1201,9 @@ main.main h1 {font-size:16px; line-height:24px; background:transparent; padding:
 .tab_mobile_dropdown {width:25%; float:left;}
 .visible-phone.mylearningtab .table-toolbar {width:25%;}
 .visible-phone.mylearningtab .table-toolbar:last-child {width:49%; float:right;}
+.wrapper-container {
+  margin-bottom: 40px!important;
+}
 }
 
 
@@ -1153,13 +1254,20 @@ main.main {padding-bottom:20px !important;}
 .user-learning-statistics .span4:last-child a, .user-site-statistics .span4:last-child a {padding-right:0 !important;}
 #dashboard .account-profile.widget .col-lg-6:first-child {max-width:50%; flex:0 0 50%;}
 #dashboard .account-profile.widget .col-lg-6:last-child {max-width:50%; flex:0 0 50%;}
-.volt-img {
-  margin-top: 82px;
-}
 .site-footer .row {width:auto;}
+.wrapper-container {
+  margin-bottom: 60px!important;
 }
-.site-footer {
-  background: #051315;
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper-container {
+    margin-bottom: 30px;
+  }
+  .info-text {
+    padding: 40px 20px;
+  }
+  
 }
 
 @media screen and (max-width:480px) {
@@ -1181,20 +1289,32 @@ a.m-logo {display:none !important;}
 /*.user-learning-statistics .span4, .user-site-statistics .span4 {width:100%;}
 .user-learning-statistics .span4 {border:none;}
 .user-site-statistics .span4 {border:none;}*/
-.volt-img {
-  margin-top: 80px;
+.wrapper-container {
+  margin-bottom: 20px;
 }
+.info-text {
+  padding: 20px;
+}
+  .volt-img {
+    margin-top: 40px;
+  }
 }
 
 @media screen and (max-width:360px) {
+  .wrapper-container {
+    margin-bottom: 20px;
+  }
   .volt-img {
-    margin: 25px auto;
+    width: 200px!important;
   }
 }
 
 @media screen and (max-width:350px) {
   .body-container.logincheck .site-header.app-header .row.togglelogoset.flip .col-lg-6:last-child {left:200px;}
   .body-container.logincheck .site-header.app-header .row.togglelogoset .col-lg-6:last-child {left:0;}
+  .wrapper-container {
+    margin-bottom: 60px!important;
+  }
   .volt-img {
     width: 40%;
     margin: 0 auto;
