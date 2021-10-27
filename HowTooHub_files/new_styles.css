@@ -1,0 +1,266 @@
+.body-container {
+  background: #051315!important;
+}
+
+#mainContainer {
+  background: #051315!important;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.wrapper-container {
+  display: flex;
+}
+
+.info-text {
+  width: 600px;
+  padding: 40px 60px;
+  color: #fff;
+}
+
+h1.info-text-title {
+  color: #fff!important;
+  font-family: 'Oswald', sans-serif!important;
+  font-size: 42px!important;
+  line-height: 40px!important;
+}
+
+.info-text-subtitle {
+  font-size: 16px;
+  font-weight: 200;
+  margin-top: 30px;
+}
+
+.btn-start {
+  margin-top: 40px;
+  padding-left: 0;
+}
+
+.main-pic {
+  display: block;
+  margin: 40px auto 0;
+}
+
+.volt-img {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.picture, .bottom-pic  {
+  background: #051315;
+}
+
+.navbar-navigation li:not(:last-child) {
+  margin-right: 15px!important;
+}
+
+.btn-start {
+  margin-top: 40px;
+  padding-left: 0;
+}
+
+.main-pic {
+  display: block;
+  margin: 40px auto 0;
+}
+
+.volt-img {
+  width: 350px;
+  display: block;
+  margin: 0 auto;
+}
+
+.picture, .bottom-pic  {
+  background: #051315;
+}
+
+.wrapper-container {
+  margin-bottom: 50px;
+}
+
+.btn-volt {
+  border-radius: 15px!important;
+  background: #01FFFF !important;
+  color: #000000!important;
+  padding: 6px 15px;
+}
+
+.btn-volt:hover {
+  background: #fff!important;
+}
+
+/** Menu buttons */
+ul.navbar-navigation li {
+  background-color: #01FFFF;
+  border-radius: 50px;
+  font-family: 'Oswald', sans-serif;
+}
+
+.body-container.logincheck nav.navbar.main-menu li a:hover, .body-container.logincheck nav.navbar.main-menu li.active a {
+  background: #fff!important;
+  border-radius: 50px!important;
+}
+
+
+#navMenu ul.navbar-navigation li a {
+  color: #000000!important;
+}
+
+.login-dropdown .button--login {
+  background:#01FFFF; 
+  color:#000000 !important; 
+  font-size:14px; 
+  font-weight:normal; 
+  font-family: 'Oswald', sans-serif; 
+  border-radius:15px; 
+  height:32px; 
+  line-height:18px;
+}
+
+.login-dropdown .button--login:hover, .login-dropdown .button--login:focus, .login-dropdown .button--login:active {
+  background: #fff!important;
+  color: #000000!important;
+}
+
+
+@media screen and (min-width: 2000px) and (height: 1440px) {
+  .main-pic {
+    margin: 200px auto 0!important;
+  }
+
+  .bottom-pic {
+    margin-top: 150px;
+  }
+}
+@media screen and (max-width:1199px) {
+  .wrapper-container {
+    margin-bottom: 115px;
+  }
+}
+
+@media only screen and (width: 1024px) and (height: 1366px) {
+  .wrapper-container {
+    display: flex;
+    flex-direction: column!important;
+    align-items: center;
+    
+  }
+
+  .info-text {
+    width: 90%!important;
+    text-align: center;
+  }
+
+  h1.info-text-title {
+    font-size: 56px!important;
+    margin-top: 50px!important;
+  }
+
+  .info-text-subtitle {
+    font-size: 26px;
+    line-height: 2rem;
+  }
+}
+
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+  .info-text {
+    width: 400px;
+  }
+
+  .volt-img {
+    margin-top: 70px;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .wrapper-container {
+    margin-bottom: 110px;
+  }
+}
+
+@media screen and (max-width:768px) and (max-height: 1024px) {
+  #navMenu {
+    margin-right: 30px;
+    position: fixed;
+  }
+
+  .wrapper-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .info-text {
+    width: 100%;
+    text-align: center;
+  }
+
+  .main-pic {
+    margin: 0 auto;
+  }
+
+  .volt-img {
+    margin: 0;
+    max-width: 250px;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .wrapper-container {
+    margin-bottom: 50px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .wrapper-container {
+    margin-bottom: 90px;
+  }
+}
+
+@media screen and (max-width:600px) {
+  .wrapper-container {
+    margin-bottom: 60px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .wrapper-container {
+    margin-bottom: 115px;
+  }
+  .info-text {
+    padding: 40px 20px;
+  }
+  
+}
+
+@media screen and (max-width:480px) {
+  .wrapper-container {
+    margin-bottom: 75px;
+  }
+  .info-text {
+    padding: 20px;
+  }
+    .volt-img {
+      margin-top: 40px;
+    }
+}
+
+@media screen and (max-width:360px) {
+  .wrapper-container {
+    margin-bottom: 100px;
+  }
+  .volt-img {
+    width: 200px;
+  }
+}
+
+@media screen and (max-width:350px) {
+  .wrapper-container {
+    margin-bottom: 100px;
+  }
+  .volt-img {
+    width: 60%;
+    margin: 0 auto;
+  }
+}
